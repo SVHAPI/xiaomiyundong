@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VHAPI</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/util.css" rel="stylesheet">
+    <script src="js/function.js"></script>
+</head>
+<body>
+ <div class="limiter">
+        <div class="container-login100" style="background-image: url(https://api.ixiaowai.cn/gqapi/gqapi.php);opacity:0.7">
+            <div class="wrap-login100 p-l-55 p-r-55 p-t-50 p-b-25">
+                <span class="login100-form-title p-b-25" style="color:#006935;">小米运动刷步数</span>
+                <div class="wrap-input100 validate-input m-b-8" data-validate="请输入小米运动登录账号">
+                    <input class="input100" type="text" id="phone" name="zyCount" placeholder="请输入小米运动登录账号" autocomplete="off">
+                    <span class="focus-input100" data-symbol=""></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-8" data-validate="请输入小米运动登录密码">
+                    <input class="input100" type="password" id="pwd" name="zyCount" placeholder="请输入小米运动登录密码" autocomplete="off">
+                    <span class="focus-input100" data-symbol=""></span>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="请输入要修改的步数(1~88800)">
+                    <input class="input100" type="text" id="step" name="zyStep" placeholder="请输入要修改的步数(1~88800)">
+                    <span class="focus-input100" data-symbol=""></span>
+                </div>
+                <div class="container-login100-form-btn p-t-25">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn" id="submit" onclick="ttl()" type="button">提交修改</button>
+                    </div>
+                </div>
+                <div class="txt1 text-left p-t-25 p-b-8">
+                    <span>使用帮助：</span><br>
+                    <br>
+                    <span>
+                        1、在本页面输入账号、密码及要修改的步数，点击提交修改
+                    </span>
+                    <br>
+                    <span>
+                        2、建议分次递增提交，不要修改到非人类的数值
+                    </span>
+                    <br>
+                    <span>
+                        3、本网站无需下载小米运动即可完成注册绑定和重置密码
+                    </span>
+                    <br>
+                    <span>
+                        <h1><a href="./register.html" class="txt2">注册账号点这里</a></h1>
+                        <h1><a href="./createwxqr.html" class="txt2">扫码绑定点这里</a></h1>
+                        <h1><a href="./reset.html" class="txt2">忘记密码点这里</a></h1>
+                    </span>
+                    <br>
+                </div>
+                <div class="flex-col-c p-t-8">
+                    <p style="text-align:center;">
+                        Copyright ©
+                        <span class="tm-current-year">2022</span>
+                        <a href="https://www.vhapi.com/xiaomi" class="txt2">VHAPI</a>
+                        <img src="./img/fluidicon.png" />
+                        <a href="https://github.com/zxcm1" class="txt2">GitHub</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VHAPI</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/util.css" rel="stylesheet">
+    <script src="js/jquery2.1.4.js"></script>
+    <script src="js/jquery.qrcode.js"></script>
+    <script src="js/utf.js"></script>
+    <script src="js/function.js"></script>
+</head>
+<body>
+ <div class="limiter">
+        <div class="container-login100" style="background-image: url(https://api.ixiaowai.cn/gqapi/gqapi.php);opacity:0.7">
+            <div class="wrap-login100 p-l-55 p-r-55 p-t-50 p-b-25">
+                <span class="login100-form-title p-b-25" style="color:#006935;">小米运动注册</span>
+                <div class="wrap-input100 validate-input m-b-8" data-validate="请输入手机号">
+                    <input class="input100" type="text" id="phone" name="zyCount" placeholder="请输入手机号" autocomplete="off">
+                    <span class="focus-input100" data-symbol=""></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-8" data-validate="请输入密码">
+                    <input class="input100" type="password" id="pwd" name="zyCount" placeholder="请输入密码" autocomplete="off">
+                    <span class="focus-input100" data-symbol=""></span>
+                </div>
+                <div class="flex-direction">
+                    <div class="wrap-input100 validate-input" data-validate="验证码">
+                        <input class="input100" type="text" id="step" name="zyStep" placeholder="验证码">
+                        <span class="focus-input100" data-symbol=""></span>
+                    </div>
+                    <button class="Verification" id="get-code" onclick="getcode()">获取验证码</button>
+                </div>
+                <div class="container-login100-form-btn p-t-25">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn" id="submit" onclick="register()" type="button">注册</button>
+                    </div>
+                </div>
+                <div class="img-div" id="img"></div>
+                <div class="txt1 text-left p-t-25 p-b-8">
+                    <span>使用帮助：</span><br>
+                    <span>
+                        1、输入手机号和密码注册
+                    </span>
+                    <br>
+                    <span>
+                        2、微信扫码然后点绑定设备
+                    </span>
+                    <br>
+                    <span>
+                        <h1><a href="./index.html" class="txt2">刷步数点这里</a></h1>
+                    </span>
+                    <span>注意：</span><br>
+                    <span style="color: red; font-size:17px">
+                        1、密码不可以带特殊符号只能数字加大小写字母
+                    </span>
+                    <br>
+                    <br>
+                </div>
+                <div class="flex-col-c p-t-8">
+                    <p style="text-align:center;">
+                        Copyright ©
+                        <span class="tm-current-year">2022</span>
+                        <a href="https://www.vhapi.com/xiaomi" class="txt2">VHAPI</a>
+                        <img src="./img/fluidicon.png" />
+                        <a href="https://github.com/zxcm1" class="txt2">GitHub</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
